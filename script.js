@@ -65,3 +65,15 @@ document.addEventListener('click', event => {
     resumeToggle?.setAttribute('aria-expanded', 'false');
   }
 });
+
+// Back-to-top: use the window directly so the action works reliably on mobile Safari too.
+document.querySelector('.back-to-top')?.addEventListener('click', event => {
+  event.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Keep the resume dropdown from scrolling the whole page when the pointer/finger is over it.
+resumeMenu?.addEventListener('wheel', event => {
+  const canScroll = resumeMenu.querySelector('.resume-options');
+  if (canScroll && canScroll.scrollHeight > canScroll.clientHeight) event.stopPropagation();
+}, { passive: true });
