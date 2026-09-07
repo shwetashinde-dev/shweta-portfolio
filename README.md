@@ -1,19 +1,15 @@
-# Shweta Shinde Portfolio — V1
+# Shweta Shinde Portfolio — Updated
 
-Static, responsive portfolio website using plain HTML, CSS and JavaScript. It is intentionally framework-free so it can be opened locally and deployed directly to Vercel.
+Static portfolio built with HTML, CSS and JavaScript.
 
 ## Included
 - `index.html` — page content and structure
-- `styles.css` — ivory + deep teal editorial design
-- `script.js` — mobile menu, reveal animations and metric counters
-- `assets/shweta-hero.jpeg` — the exact photo supplied by Shweta
-- `assets/Shweta-Shinde-Resume.pdf` — current resume
+- `styles.css` — ivory + deep teal visual system and responsive styling
+- `script.js` — mobile navigation, repeatable scroll-reveal interactions and resume selector
+- `assets/shweta-hero.jpeg` — exact supplied portrait
+- `assets/Shweta-Shinde-Data-Engineering-Resume.pdf` — technical resume
+- `assets/Shweta-Shinde-Product-Management-Resume.pdf` — product/business/delivery resume
 
-## Before launch
-Replace `YOUR_EMAIL_HERE` in `index.html` with the final professional email address.
-
-## Local preview
-Open `index.html` in a browser. For a local server, run `python3 -m http.server 8000` from this folder and open `http://localhost:8000`.
-
-## Deploy
-This folder can be pushed to GitHub and imported into Vercel as a static site. No build command is required.
+## Contact
+LinkedIn: https://www.linkedin.com/in/shwetashinde122422
+Email: shweta2407shinde@gmail.com
