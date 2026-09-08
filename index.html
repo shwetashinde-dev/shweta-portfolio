@@ -1,183 +1,207 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Shweta Shinde — AI & Data Engineer and MBA in Project Management. Data, technology, business and delivery." />
-  <meta name="theme-color" content="#f7f5ee" />
-  <title>Shweta Shinde — AI & Data Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1411">
+<meta name="description" content="Shweta Shinde — AI & Data Engineer | MBA — Project Management.">
+<title>Shweta Shinde — AI & Data Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* --- Subtle hero portrait frame --- */
+.hero-photo-frame {
+  position: relative;
+  display: inline-block;
+  border-radius: 24px;
+  padding: 7px;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,.72),
+    rgba(255,255,255,.18)
+  );
+  border: 1px solid rgba(255,255,255,.62);
+  box-shadow:
+    0 18px 45px rgba(31, 41, 55, .12),
+    0 3px 12px rgba(31, 41, 55, .06),
+    inset 0 1px 0 rgba(255,255,255,.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.hero-photo-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Prevent the portrait itself from inheriting blending/fading effects. */
+.hero img.hero-photo,
+.hero .hero-photo img,
+.hero-image img,
+.hero-photo-frame img {
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+}
+
+/* Keep the frame elegant and understated on smaller screens. */
+@media (max-width: 700px) {
+  .hero-photo-frame {
+    border-radius: 20px;
+    padding: 6px;
+  }
+  .hero-photo-frame img {
+    border-radius: 15px;
+  }
+}
+</style>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Shweta Shinde home">
-      <span>SHWETA SHINDE</span>
-      <small>DATA × TECHNOLOGY × BUSINESS</small>
-    </a>
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#beyond">Beyond Work</a>
-    </nav>
-    <a class="button button-small" href="#contact">Let’s Connect <span>→</span></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-  </header>
-  <div class="mobile-nav" aria-hidden="true">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#beyond">Beyond Work</a><a href="#contact">Contact</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="monogram" href="#top" aria-label="Shweta Shinde home">SS</a>
+  <nav class="nav-pill" aria-label="Primary navigation">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-mark">DATA × DESIGN × IMPACT</div>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+</header>
+<div class="mobile-nav" aria-hidden="true"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-gridline line-a"></div><div class="hero-gridline line-b"></div>
+  <div class="hero-copy reveal">
+    <p class="micro">HELLO, I'M</p>
+    <h1>SHWETA<br><span>SHINDE</span></h1>
+    <p class="role">AI &amp; DATA ENGINEER</p>
+    <p class="mba">MBA — PROJECT MANAGEMENT</p>
+    <p class="hero-statement">Turning data into<br>meaningful impact.</p>
+    <a class="scroll-cue" href="#about"><span class="arrow">↓</span><span>SCROLL TO EXPLORE</span></a>
+  </div>
+  <div class="hero-art reveal delay">
+    <div class="art-glow"></div>
+    <div class="art-frame frame-one"></div><div class="art-frame frame-two"></div>
+    <div class="hero-portrait">
+      <img src="assets/shweta-hero.jpeg" alt="Shweta Shinde in an olive blazer and glasses" class="hero-photo">
+    </div>
+    <div class="side-words"><span>DATA</span><span>TECHNOLOGY</span><span>PEOPLE</span><span>IDEAS</span><span>IMPACT</span></div>
+    <div class="hero-side-note">A CURIOUS MIND<br>A CREATIVE HEART<br>A DRIVE TO BUILD IMPACT</div>
+  </div>
+</section>
+
+<section class="about section" id="about">
+  <div class="section-top"><span>01</span><i></i><b>ABOUT ME</b></div>
+  <div class="about-layout">
+    <div class="about-copy reveal">
+      <h2>More than<br><em>just data.</em></h2>
+      <p>I’m an AI &amp; Data Engineer with 3+ years of experience at Deloitte, passionate about building data-driven solutions that create real business impact. I enjoy working at the intersection of technology, problem-solving and people, and I’m currently pursuing an MBA in Project Management to strengthen my business and leadership skills.</p>
+      <a class="outline-btn" href="#experience">Get to know me <span>→</span></a>
+    </div>
+    <div class="about-collage reveal delay">
+      <figure class="about-photo about-code"><img src="assets/workspace-code.jpeg" alt="Coding workspace"></figure>
+      <figure class="about-photo about-crochet"><img src="assets/creative-crochet.jpeg" alt="Handmade crochet sunflower"></figure>
+      <figure class="about-photo about-flight"><img src="assets/travel-flight.jpeg" alt="Sunset from an airplane window"></figure>
+      <div class="quote-panel"><span>“</span><strong>Different perspectives<br>create better solutions.</strong><i></i></div>
+      <div class="logic-panel"><b>TECH</b><b>PEOPLE</b><b>IDEAS</b><b>IMPACT</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact section" id="impact">
+  <div class="impact-item reveal" data-target="3" data-suffix="+"><strong>0+</strong><span>YEARS<br>EXPERIENCE</span><small>Building scalable data solutions</small></div>
+  <div class="impact-item reveal delay" data-target="35" data-suffix="%"><strong>0%</strong><span>PIPELINE LATENCY<br>REDUCTION</span><small>Through end-to-end migration</small></div>
+  <div class="impact-item reveal" data-target="40" data-suffix="%"><strong>0%</strong><span>MAINTENANCE COST<br>REDUCTION</span><small>Via automation &amp; optimisation</small></div>
+</section>
+
+<section class="experience section" id="experience">
+  <div class="section-top"><span>02</span><i></i><b>EXPERIENCE</b></div>
+  <div class="section-intro"><h2>Professional<br><em>journey.</em></h2><p>Enterprise data, cloud platforms, automation and the business questions behind them.</p></div>
+  <div class="timeline">
+    <article class="timeline-item active"><div class="timeline-index">01</div><div class="timeline-main"><div class="timeline-date">OCT 2023 — PRESENT</div><h3>CTRMA — GCP PLATFORM</h3><p>Led an end-to-end migration from Cloud Data Fusion to Dataform, establishing version-controlled SQL workflows while improving execution performance and maintainability.</p><div class="chips"><span>GCP</span><span>BigQuery</span><span>Dataform</span><span>SQL</span></div></div><div class="timeline-aside">CLIENT DELIVERY<br>DATA ENGINEERING</div></article>
+    <article class="timeline-item"><div class="timeline-index">02</div><div class="timeline-main"><div class="timeline-date">FEB 2023 — OCT 2023</div><h3>SANOFI CH SAFETY</h3><p>Worked on healthcare data workflows using AWS and Python, automated monitoring and validation, and created Power BI dashboards for operational visibility.</p><div class="chips"><span>AWS</span><span>Python</span><span>Power BI</span></div></div><div class="timeline-aside">HEALTHCARE<br>WORKFLOW</div></article>
+  </div>
+</section>
+
+<section class="projects section" id="projects">
+  <div class="section-top"><span>03</span><i></i><b>FEATURED PROJECTS</b></div>
+  <div class="section-intro"><h2>Work that<br><em>solves a problem.</em></h2><p>A few pieces of work that show how I approach technology, business logic and delivery.</p></div>
+  <div class="project-stack">
+    <article class="project-card project-one"><div class="project-visual"><div class="visual-orbit"></div><span>DATAFORM</span><span>→</span></div><div class="project-copy"><small>01 / DATA ENGINEERING</small><h3>Enterprise Dataform Migration</h3><p>Modernising legacy pipelines on GCP through a controlled migration to Dataform, reducing execution latency by 35% and maintenance costs by 40%.</p><div class="chips"><span>GCP</span><span>BigQuery</span><span>Dataform</span></div></div></article>
+    <article class="project-card project-two"><div class="project-visual"><div class="visual-bars"><i></i><i></i><i></i><i></i><i></i></div><span>RECONCILIATION</span><span>↗</span></div><div class="project-copy"><small>02 / BUSINESS + DATA</small><h3>Financial Reconciliation Reporting</h3><p>Partnered with functional stakeholders to implement business logic for reconciliation reporting and audit-ready data.</p><div class="chips"><span>Business Logic</span><span>SQL</span><span>Reporting</span></div></div></article>
+    <article class="project-card project-three"><div class="project-visual"><div class="visual-pulse"></div><span>AUTOMATION</span><span>↗</span></div><div class="project-copy"><small>03 / WORKFLOW AUTOMATION</small><h3>Healthcare Data Workflow</h3><p>Automated recurring monitoring and validation checks, reducing manual oversight and improving operational visibility through Power BI.</p><div class="chips"><span>AWS</span><span>Python</span><span>Power BI</span></div></div></article>
+  </div>
+  <p class="confidential">Professional client work is presented at a high level to respect confidentiality.</p>
+</section>
+
+<section class="skills section">
+  <div class="section-top"><span>04</span><i></i><b>HOW I WORK</b></div>
+  <div class="skills-grid">
+    <article><small>01</small><h3>DATA<br>ENGINEERING</h3><p>Building, modernising and automating enterprise data pipelines with a focus on reliability and maintainability.</p></article>
+    <article><small>02</small><h3>CLOUD<br>&amp; DATA</h3><p>Working across GCP and AWS environments, from ingestion and staging through ODS and DWH layers.</p></article>
+    <article><small>03</small><h3>BUSINESS<br>&amp; PRODUCT</h3><p>Translating requirements, assessing impact and connecting technical solutions to business needs.</p></article>
+    <article><small>04</small><h3>DELIVERY<br>&amp; PEOPLE</h3><p>Agile collaboration, Jira, ServiceNow, stakeholder communication, documentation and team enablement.</p></article>
+  </div>
+</section>
+
+<section class="resume section" id="resume">
+  <div class="section-top"><span>05</span><i></i><b>RESUME</b></div>
+  <div class="resume-layout"><h2>Two directions.<br><em>One foundation.</em></h2><p>Choose the version that best matches the opportunity you're exploring.</p></div>
+  <div class="resume-grid">
+    <a class="resume-card" href="assets/Shweta-Shinde-Data-Engineering-Resume.pdf" download><small>TECHNICAL</small><h3>Data &amp; AI Engineering</h3><p>Cloud data platforms, engineering, automation, SQL, Python and enterprise workflows.</p><span>DOWNLOAD ↗</span></a>
+    <a class="resume-card" href="assets/Shweta-Shinde-Product-Management-Resume.pdf" download><small>FUNCTIONAL + TECHNICAL</small><h3>Product, Business &amp; Delivery</h3><p>Requirements, Agile delivery, stakeholder collaboration, product thinking and project management.</p><span>DOWNLOAD ↗</span></a>
+  </div>
+</section>
+
+<section class="education section" id="education">
+  <div class="section-top"><span>06</span><i></i><b>EDUCATION</b></div>
+  <div class="education-grid"><div><small>2024 — 2026</small><h2>MBA — PROJECT MANAGEMENT</h2><p>D.Y. Patil College, Pune</p><span>Expected completion: November 2026</span></div><div><small>GRADUATED 2022</small><h2>B.Sc. — COMPUTER SCIENCE</h2><p>Indira College of Commerce and Science, Pune</p></div></div>
+</section>
+
+<section class="certs section"><div class="section-top"><span>07</span><i></i><b>CERTIFICATIONS</b></div><div class="cert-marquee"><span>GitHub Copilot Fundamentals</span><span>Developer Use Cases for AI with GitHub Copilot</span><span>Tech Savvy Generative AI Jumpstart</span><span>Deloitte AI Academy — Generative AI Fluency</span><span>Master the Art of Prompt Engineering</span><span>GPS Generative AI Fundamentalist — Deloitte</span></div></section>
+
+<section class="beyond section" id="beyond">
+  <div class="section-top"><span>08</span><i></i><b>BEYOND WORK</b></div>
+  <div class="life-heading reveal"><div><h2>A little more<br><em>life outside the screen.</em></h2></div><p>There is more to me than the work I do — places I explore, things I make, and people I show up for.</p></div>
+
+  <div class="life-story reveal">
+    <div class="life-story-copy"><span>01 / ART</span><h3>Made with my hands.<br><em>Seen with my eyes.</em></h3><p>Painting and crochet are my quieter forms of problem-solving — a little colour, patience and something tangible at the end.</p></div>
+    <div class="life-cluster art-cluster">
+      <figure class="life-card art-paint-one"><img src="assets/creative-sunset.jpeg" alt="Sunset painting"><figcaption>Painting · colour &amp; light</figcaption></figure>
+      <figure class="life-card art-crochet"><img src="assets/creative-crochet.jpeg" alt="Crochet sunflower"><figcaption>Crochet · made by hand</figcaption></figure>
+      <figure class="life-card art-paint-two"><img src="assets/creative-beach.jpeg" alt="Coastal painting"><figcaption>Painting · places imagined</figcaption></figure>
+    </div>
   </div>
 
-  <main>
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">AI & DATA ENGINEER <span>│</span> MBA — PROJECT MANAGEMENT</p>
-        <h1>SHWETA<br><span>SHINDE</span></h1>
-        <h2>I like figuring out<br class="desktop-only"/> how things work.</h2>
-        <p class="hero-text">I build and modernize enterprise data solutions while exploring the space where technology, business and project delivery meet.</p>
-        <div class="hero-actions">
-          <a class="button" href="#projects">Explore My Work <span>→</span></a>
-          <div class="resume-menu">
-            <button class="button button-outline resume-toggle" type="button" aria-expanded="false">Choose a Resume <span>↓</span></button>
-            <div class="resume-options">
-              <a href="assets/Shweta-Shinde-Data-Engineering-Resume.pdf" download><strong>Data & AI Engineering</strong><small>For data, cloud & engineering opportunities</small></a>
-              <a href="assets/Shweta-Shinde-Product-Management-Resume.pdf" download><strong>Product, Business & Delivery</strong><small>For product, BA & functional opportunities</small></a>
-            </div>
-          </div>
-        </div>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/shwetashinde122422/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <span></span>
-          <a href="mailto:shweta2407shinde@gmail.com">Email</a>
-        </div>
-      </div>
-      <div class="hero-visual reveal delay-1">
-        <div class="portrait-shape" aria-hidden="true"></div>
-        <img src="assets/shweta-hero.jpeg" alt="Shweta Shinde" />
-      </div>
-    </section>
+  <div class="life-story reverse reveal">
+    <div class="life-story-copy"><span>02 / SOLO TRAVELLING + FUN</span><h3>New places.<br><em>Different perspectives.</em></h3><p>From snow to open skies, I love travelling for the feeling of being somewhere unfamiliar — and the stories I bring back.</p></div>
+    <div class="life-cluster travel-cluster">
+      <figure class="life-card travel-snow"><img src="assets/travel-snow.jpeg" alt="Snowy travel moment"><figcaption>Snow · chasing winter</figcaption></figure>
+      <figure class="life-card travel-flight"><img src="assets/travel-flight.jpeg" alt="Airplane window at sunset"><figcaption>Somewhere new</figcaption></figure>
+      <figure class="life-card travel-river"><img src="assets/travel-river.jpeg" alt="Stacked stones beside a river"><figcaption>Slow moments</figcaption></figure>
+      <figure class="life-card travel-para-one"><img src="assets/travel-paraglide-01.jpeg" alt="Paragliding over mountains"><figcaption>Adventure · up there</figcaption></figure>
+      <figure class="life-card travel-para-two"><img src="assets/travel-paraglide-02.jpeg" alt="Paragliding over a valley"><figcaption>Keep exploring</figcaption></figure>
+    </div>
+  </div>
 
-    <section class="impact-band reveal-section">
-      <div><strong data-count="35">35%</strong><span>Reduction in<br/>pipeline execution latency</span></div>
-      <div><strong data-count="40">40%</strong><span>Reduction in<br/>maintenance costs</span></div>
-      <div><strong data-count="30">30%</strong><span>Increase in<br/>payload capacity</span></div>
-      <div><strong data-count="50">50%</strong><span>Reduction in<br/>manual monitoring effort</span></div>
-    </section>
+  <div class="life-story reveal">
+    <div class="life-story-copy"><span>03 / COMMUNITY WORK</span><h3>Showing up.<br><em>Giving back.</em></h3><p>Impact Day is one of the reminders that meaningful work is not always about what we build — sometimes it is about who we build it with.</p></div>
+    <div class="life-cluster impact-cluster">
+      <figure class="life-card impact-activity"><img src="assets/impact-day-activity.jpeg" alt="Community activity during Deloitte Impact Day"><figcaption>Impact Day · giving back</figcaption></figure>
+      <figure class="life-card impact-team"><img src="assets/impact-day-team.jpeg" alt="Team moment during Deloitte Impact Day"><figcaption>Team moments</figcaption></figure>
+      <figure class="life-card impact-group"><img src="assets/impact-day-group.jpeg" alt="Group moment during Deloitte Impact Day"><figcaption>Good people, good work</figcaption></figure>
+    </div>
+  </div>
+</section>
 
-    <section class="content-section section-shell reveal-section" id="about">
-      <div class="section-label"><b>01</b><span>ABOUT ME</span></div>
-      <div class="section-content two-col">
-        <div>
-          <h3>I like figuring out<br/>how things work.</h3>
-          <p>My journey into technology started with Computer Science, but over time, I realised that what I enjoy most isn't simply writing code — <strong>it's solving the problem behind it.</strong></p>
-          <p>Today, I work as an AI & Data Engineer at Deloitte USI, where I work with data, cloud platforms and enterprise systems. I've had the opportunity to work on everything from modernising data pipelines to automating repetitive processes and figuring out why something isn't working when it really should be.</p>
-        </div>
-        <aside class="quote-card"><span>“</span><p>What problem are we actually trying to solve?</p></aside>
-      </div>
-      <div class="about-bottom"><p>Along the way, I started becoming increasingly interested in what happens beyond the technical solution — <strong>why are we building this, what does the business actually need, and how can we make the process better?</strong></p><p>That curiosity is one of the reasons I chose to pursue an MBA in Project Management alongside my technical career.</p></div>
-    </section>
-
-    <section class="content-section section-shell reveal-section" id="capabilities">
-      <div class="section-label"><b>02</b><span>WHAT I DO</span></div>
-      <div class="capability-grid">
-        <article><small>01</small><h4>DATA ENGINEERING</h4><p>Building, modernizing and automating enterprise data pipelines with a focus on reliability, scalability and maintainability.</p><div class="skill-chips"><span><i>G</i> GCP</span><span><i>BQ</i> BigQuery</span><span><i>D</i> Dataform</span><span><i>SQL</i> SQL</span><span><i>Py</i> Python</span></div></article>
-        <article><small>02</small><h4>CLOUD & DATA</h4><p>Working across cloud-based data environments and designing solutions that support enterprise ingestion and warehousing.</p><div class="skill-chips"><span><i>A</i> AWS</span><span><i>CD</i> Data Fusion</span><span><i>CS</i> Cloud SQL</span><span><i>ODS</i> ODS</span><span><i>DW</i> DWH</span></div></article>
-        <article><small>03</small><h4>BUSINESS & PRODUCT</h4><p>Exploring the problem behind the solution through requirements, impact analysis, business analysis, product thinking and technical POCs.</p><div class="skill-chips"><span><i>BA</i> Business Analysis</span><span><i>R</i> Requirements</span><span><i>P</i> Product Thinking</span><span><i>POC</i> POCs</span></div></article>
-        <article><small>04</small><h4>DELIVERY & STAKEHOLDERS</h4><p>Working closely with clients and teams through Jira, ServiceNow, email, Agile delivery, documentation and knowledge transfer.</p><div class="skill-chips"><span><i>J</i> Jira</span><span><i>S</i> ServiceNow</span><span><i>A</i> Agile</span><span><i>ST</i> Stakeholders</span></div></article>
-      </div>
-    </section>
-
-    <section class="resume-section section-shell reveal-section" id="resume">
-      <div class="section-label"><b>03</b><span>RESUME</span></div>
-      <div class="resume-heading">
-        <div>
-          <h3>Two directions.<br/>One foundation.</h3>
-        </div>
-        <p>My technical foundation is complemented by a growing interest in product thinking, business analysis and project delivery. Choose the version that best matches the opportunity you're exploring.</p>
-      </div>
-      <div class="resume-cards">
-        <a class="resume-card" href="assets/Shweta-Shinde-Data-Engineering-Resume.pdf" download>
-          <small>TECHNICAL</small><h4>Data & AI Engineering</h4>
-          <p>Cloud data platforms, engineering, automation, SQL, Python and enterprise data workflows.</p>
-          <span>Download resume →</span>
-        </a>
-        <a class="resume-card" href="assets/Shweta-Shinde-Product-Management-Resume.pdf" download>
-          <small>FUNCTIONAL + TECHNICAL</small><h4>Product, Business & Delivery</h4>
-          <p>Requirements, analysis, Agile delivery, stakeholder collaboration, product thinking and project management.</p>
-          <span>Download resume →</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="content-section section-shell reveal-section" id="experience">
-      <div class="section-label"><b>04</b><span>EXPERIENCE</span></div>
-      <div class="experience-head"><div><h3>DELOITTE USI</h3><p class="role">AI & Data Engineer</p><p>February 2023 — Present</p></div><p class="experience-intro">Working on enterprise data solutions, cloud data ingestion and automation, with a focus on scalable, reliable and business-aligned delivery.</p></div>
-      <div class="timeline">
-        <article class="timeline-item"><div class="date">OCT 2023 — PRESENT</div><div><h4>CTRMA — GCP PLATFORM</h4><p>Led a legacy Cloud Data Fusion → Dataform migration, established version-controlled SQL workflows and improved pipeline performance and maintainability.</p><div class="tags"><span>GCP</span><span>BigQuery</span><span>Dataform</span><span>SQL</span><span>ETL</span></div></div></article>
-        <article class="timeline-item"><div class="date">FEB 2023 — OCT 2023</div><div><h4>SANOFI CH SAFETY — HEALTHCARE DATA WORKFLOW</h4><p>Worked on healthcare data workflows using AWS and Python, automated monitoring and validation, and created Power BI dashboards for operational visibility.</p><div class="tags"><span>AWS</span><span>Python</span><span>Power BI</span><span>Data Validation</span></div></div></article>
-      </div>
-    </section>
-
-    <section class="content-section section-shell reveal-section" id="projects">
-      <div class="section-label"><b>05</b><span>SELECTED WORK</span></div>
-      <div class="project-grid">
-        <article class="project-card"><div class="project-number">01</div><h4>Enterprise Dataform Migration</h4><p>Modernizing legacy data pipelines through migration to Dataform, improving execution performance and reducing maintenance overhead.</p><div class="tags"><span>GCP</span><span>BigQuery</span><span>Dataform</span></div></article>
-        <article class="project-card"><div class="project-number">02</div><h4>Healthcare Data Workflow Automation</h4><p>Automating monitoring and validation workflows while improving operational visibility through stakeholder dashboards.</p><div class="tags"><span>AWS</span><span>Python</span><span>Power BI</span></div></article>
-        <article class="project-card"><div class="project-number">03</div><h4>Financial Reconciliation Reporting</h4><p>Working with functional stakeholders to implement business logic for financial reconciliation reporting and audit-ready data.</p><div class="tags"><span>SQL</span><span>Business Logic</span><span>Reporting</span></div></article>
-        <article class="project-card"><div class="project-number">04</div><h4>MBA Project Management Research</h4><p>Exploring practical differences between Agile and traditional project delivery approaches through research and analysis.</p><div class="tags"><span>Agile</span><span>Project Management</span><span>Research</span></div></article>
-        <article class="project-card project-card-wide"><div class="project-number">05</div><h4>UI/UX Concept — Operations Dashboard</h4><p>A self-initiated interface concept focused on turning operational data into a clearer, more decision-friendly experience. This is a design exploration rather than client work.</p><div class="tags"><span>UI/UX</span><span>Information Design</span><span>Product Thinking</span></div><img src="assets/uiux-operations-dashboard.svg" alt="Self-initiated operations dashboard UI concept" loading="lazy"/></article>
-      </div>
-      <p class="project-note">Professional client work is presented at a high level to respect confidentiality.</p>
-    </section>
-
-    <section class="content-section section-shell compact reveal-section" id="education">
-      <div class="section-label"><b>06</b><span>EDUCATION</span></div>
-      <div class="education-list"><article><small>2024 — 2026</small><h3>MBA — PROJECT MANAGEMENT</h3><p>D.Y. Patil College, Pune</p><span>Expected completion: November 2026</span></article><article><small>GRADUATED 2022</small><h3>B.Sc. — COMPUTER SCIENCE</h3><p>Indira College of Commerce and Science, Pune</p></article></div>
-    </section>
-
-    <section class="content-section section-shell compact reveal-section" id="certifications">
-      <div class="section-label"><b>07</b><span>CERTIFICATIONS</span></div>
-      <div class="cert-list">
-        <span>GitHub Copilot Fundamentals</span><span>Developer Use Cases for AI with GitHub Copilot</span><span>Tech Savvy Generative AI Jumpstart</span><span>Deloitte AI Academy — Generative AI Fluency</span><span>Tech Savvy Generative AI</span><span>Master the Art of Prompt Engineering</span><span>GPS Generative AI Fundamentals — Deloitte</span>
-      </div>
-    </section>
-
-    <section class="content-section section-shell beyond reveal-section" id="beyond">
-      <div class="section-label"><b>08</b><span>BEYOND WORK</span></div>
-      <div class="beyond-intro"><h3>Curious by nature.<br/><span>Creative by choice.</span></h3><p>The things I make, the things I explore, and the people I learn with are a big part of who I am outside the job title.</p></div>
-
-      <div class="photo-story">
-        <div class="photo-story-heading"><span>01 / CREATE</span><h4>Making things with my hands.</h4></div>
-        <div class="photo-grid creative-grid">
-          <figure class="photo-card photo-large"><img src="assets/painting-sunset.jpeg" alt="Sunset and boat painting by Shweta" loading="lazy"/><figcaption>Painting — sunset & water</figcaption></figure>
-          <figure class="photo-card"><img src="assets/painting-beach.jpeg" alt="Beach house painting by Shweta" loading="lazy"/><figcaption>Painting — coastal scene</figcaption></figure>
-          <figure class="photo-card"><img src="assets/crochet-sunflower.jpeg" alt="Crochet sunflower made by Shweta" loading="lazy"/><figcaption>Crochet — sunflower</figcaption></figure>
-        </div>
-      </div>
-
-      <div class="photo-story">
-        <div class="photo-story-heading"><span>02 / CONTRIBUTE</span><h4>Showing up for community work.</h4></div>
-        <div class="photo-grid impact-grid">
-          <figure class="photo-card"><img src="assets/impact-day-activity.jpeg" alt="Shweta participating in a Deloitte Impact Day activity" loading="lazy"/><figcaption>Impact Day — creating an activity book</figcaption></figure>
-          <figure class="photo-card photo-wide"><img src="assets/impact-day-team.jpeg" alt="Deloitte Impact Day team with completed activity work" loading="lazy"/><figcaption>Impact Day — team activity</figcaption></figure>
-          <figure class="photo-card photo-wide"><img src="assets/impact-day-group.jpeg" alt="Deloitte Impact Day group photograph" loading="lazy"/><figcaption>Impact Day — team</figcaption></figure>
-        </div>
-      </div>
-
-      <div class="photo-story">
-        <div class="photo-story-heading"><span>03 / BUILD & EXPLORE</span><h4>Technology, design and curiosity.</h4></div>
-        <div class="photo-grid build-grid">
-          <figure class="photo-card photo-wide"><img src="assets/workspace.jpeg" alt="Shweta's technology workspace" loading="lazy"/><figcaption>My favourite kind of desk — something to build, something to learn.</figcaption></figure>
-          <div class="mini-note"><strong>Next milestone</strong><p>MBA completion is expected in November 2026. The graduation milestone will be added here when it arrives.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="section-shell contact-inner"><p class="eyebrow">09 / LET’S CONNECT</p><h2>Still learning.<br/><span>Still building.</span><br/>Still curious.</h2><p>I'm interested in opportunities where technology, data and business come together — and where I can keep learning while creating something meaningful.</p><a class="button" href="mailto:shweta2407shinde@gmail.com">Let’s Connect <span>→</span></a></div>
-    </section>
-  </main>
-
-  <footer class="footer section-shell"><div><strong>SHWETA SHINDE</strong><span>AI & Data Engineer · MBA — Project Management</span></div><div class="footer-links"><a href="https://www.linkedin.com/in/shwetashinde122422/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:shweta2407shinde@gmail.com">Email</a><a href="#top" class="back-to-top">Back to top ↑</a></div><small>Keep learning. Keep growing.</small></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="contact" id="contact"><div class="contact-inner"><div><small>09 / LET’S CONNECT</small><h2>Let’s make<br><em>something meaningful.</em></h2></div><div class="contact-right"><p>I’m interested in opportunities where technology, data and business come together — and where I can keep learning while creating something meaningful.</p><a href="mailto:shweta2407shinde@gmail.com">GET IN TOUCH <span>↗</span></a><a href="https://www.linkedin.com/in/shwetashinde122422" target="_blank" rel="noreferrer">LINKEDIN <span>↗</span></a></div></div></section>
+</main>
+<footer><span>© 2026 Shweta Shinde</span><span>BUILD · LEARN · GROW · REPEAT</span><a href="#top">BACK TO TOP ↑</a></footer>
+<script src="script.js"></script>
+</body></html>

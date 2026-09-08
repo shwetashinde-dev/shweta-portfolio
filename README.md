@@ -1,24 +1,19 @@
-# Shweta Shinde Portfolio — v3
+# Shweta Shinde Portfolio — V4
 
-Static, responsive portfolio built with plain HTML, CSS and JavaScript.
+Dark, editorial portfolio redesign inspired by the reference layout/typography approach, while using Shweta's own visual identity.
 
-## Included
-- `index.html` — portfolio content and structure
-- `styles.css` — ivory + deep teal visual system, responsive styling and scroll reveals
-- `script.js` — mobile navigation, repeatable scroll-reveal interactions, resume selector and back-to-top behavior
-- `assets/shweta-hero.jpeg` — exact supplied portrait
-- `assets/Shweta-Shinde-Data-Engineering-Resume.pdf` — technical resume
-- `assets/Shweta-Shinde-Product-Management-Resume.pdf` — product/business/delivery resume
-- `assets/painting-sunset.jpeg` — painting
-- `assets/painting-beach.jpeg` — painting
-- `assets/crochet-sunflower.jpeg` — crochet work
-- `assets/workspace.jpeg` — technology workspace photo
-- `assets/impact-day-activity.jpeg` — Impact Day activity photo
-- `assets/impact-day-team.jpeg` — Impact Day team photo
-- `assets/impact-day-group.jpeg` — Impact Day group photo
-- `assets/uiux-operations-dashboard.svg` — self-initiated UI/UX concept
+## Included assets
+- `assets/shweta-hero.jpeg` — the single current profile photo supplied by Shweta; used unchanged.
+- `assets/Shweta-Shinde-Data-Engineering-Resume.pdf`
+- `assets/Shweta-Shinde-Product-Management-Resume.pdf`
+
+No previously supplied personal photos are included.
 
 ## Notes
-- The site presents both technical and functional/product-oriented directions without changing Shweta's current job title.
-- Professional client work is described at a high level for confidentiality.
-- MBA graduation imagery can be added later without changing the site structure.
+- No handwritten-style annotations are used.
+- Photo interaction: the portrait card lifts forward on hover.
+- Project visuals are CSS-generated so no extra project images are required.
+- Static site; deploy to Vercel as before.
+
+
+V5 update: Beyond Work now uses the user's newly provided travel, creative, workspace, and Deloitte Impact Day photographs in an editorial overlapping photo field. Hovering a photo brings it forward; on mobile the composition remains layered and touch-friendly. The portrait remains the exact olive-blazer image already supplied.
