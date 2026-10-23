@@ -70,7 +70,7 @@
     <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
   </nav>
   <div class="header-mark">DATA × DESIGN × IMPACT</div>
-  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch theme"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">LIGHT</span></button><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button></div>
 </header>
 <div class="mobile-nav" aria-hidden="true"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
 
@@ -93,6 +93,25 @@
     </div>
     <div class="side-words"><span>DATA</span><span>TECHNOLOGY</span><span>PEOPLE</span><span>IDEAS</span><span>IMPACT</span></div>
     <div class="hero-side-note">A CURIOUS MIND<br>A CREATIVE HEART<br>A DRIVE TO BUILD IMPACT</div>
+  </div>
+</section>
+
+<section class="exploring section" id="exploring" aria-labelledby="exploring-title">
+  <div class="section-top"><span>NOW</span><i></i><b>CURIOUS BY NATURE</b></div>
+  <div class="exploring-layout">
+    <div class="exploring-intro">
+      <p class="micro">A WORK IN PROGRESS, ALWAYS</p>
+      <h2 id="exploring-title">Currently<br><em>exploring.</em></h2>
+      <p>A small snapshot of the ideas and skills I’m curious about right now — because growth happens between the milestones, too.</p>
+    </div>
+    <div class="exploring-card">
+      <div class="exploring-card-top"><span class="status-dot"></span><span>IN PROGRESS</span><span class="exploring-spark" aria-hidden="true">✳</span></div>
+      <small>MY CURRENT FOCUS</small>
+      <h3>Technical Product Management</h3>
+      <p>Connecting user and business needs with technical possibilities, clear priorities and thoughtful delivery.</p>
+      <div class="exploring-tags"><span>Product discovery</span><span>Prioritisation</span><span>AI + Data</span></div>
+      <p class="exploring-note">This section is intentionally editable as my interests and learning evolve.</p>
+    </div>
   </div>
 </section>
 
@@ -134,9 +153,9 @@
   <div class="section-top"><span>03</span><i></i><b>FEATURED PROJECTS</b></div>
   <div class="section-intro"><h2>Work that<br><em>solves a problem.</em></h2><p>A few pieces of work that show how I approach technology, business logic and delivery.</p></div>
   <div class="project-stack">
-    <article class="project-card project-one"><div class="project-visual"><div class="visual-orbit"></div><span>DATAFORM</span><span>→</span></div><div class="project-copy"><small>01 / US-BASED TRANSPORTATION &amp; TOLL</small><h3>Enterprise Dataform Migration</h3><p>Modernising a US-based transportation and toll data platform on GCP through a controlled migration to Dataform, reducing execution latency by 35% and maintenance costs by 40%.</p><div class="chips"><span>GCP</span><span>BigQuery</span><span>Dataform</span></div></div></article>
-    <article class="project-card project-two"><div class="project-visual"><div class="visual-bars"><i></i><i></i><i></i><i></i><i></i></div><span>RECONCILIATION</span><span>↗</span></div><div class="project-copy"><small>02 / BUSINESS + DATA</small><h3>Financial Reconciliation Reporting</h3><p>Partnered with functional stakeholders to implement business logic for reconciliation reporting and audit-ready data.</p><div class="chips"><span>Business Logic</span><span>SQL</span><span>Reporting</span></div></div></article>
-    <article class="project-card project-three"><div class="project-visual"><div class="visual-pulse"></div><span>AUTOMATION</span><span>↗</span></div><div class="project-copy"><small>03 / US-BASED HEALTHCARE</small><h3>Healthcare Technology Operations</h3><p>Supported a US-based healthcare and life sciences workflow through production monitoring, ServiceNow incident and service-request handling, and operational coordination to improve issue visibility and resolution.</p><div class="chips"><span>ServiceNow</span><span>Monitoring</span><span>Operations</span></div></div></article>
+    <article class="project-card project-one"><div class="project-visual"><div class="visual-orbit"></div><span>DATAFORM</span><span>→</span></div><div class="project-copy"><small>01 / US-BASED TRANSPORTATION &amp; TOLL</small><h3>GCP Data Platform Modernisation &amp; Migration</h3><p>Supported a GCP data-platform migration, helping establish version-controlled SQL workflows and dependable pipeline validation.</p><div class="chips"><span>GCP</span><span>BigQuery</span><span>Dataform</span><span>SQL</span></div><button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-study-1">Explore case study <span aria-hidden="true">＋</span></button><div class="case-details" id="case-study-1" hidden><div><small>CLIENT / PROJECT ASK</small><p>US-based transportation &amp; toll project requiring a reliable and scalable data platform on GCP, with improved SQL workflow management, execution efficiency, and maintainability. The project involved supporting data migration while ensuring data pipelines remained reliable, validated, and production-ready.</p></div><div><small>WHAT I DELIVERED</small><p>Supported the end-to-end data platform migration on GCP, helping establish structured and version-controlled SQL workflows using Dataform. Worked across pipeline monitoring, troubleshooting, validation, and unit testing to identify issues, improve execution reliability, and support accurate data movement across the platform. Contributed to maintaining dependable data workflows while improving the overall manageability and maintainability of the solution.</p></div></div></div></article>
+    <article class="project-card project-two"><div class="project-visual"><div class="visual-bars"><i></i><i></i><i></i><i></i><i></i></div><span>RECONCILIATION</span><span>↗</span></div><div class="project-copy"><small>02 / BUSINESS + DATA</small><h3>Financial Reconciliation Reporting</h3><p>Partnered with functional stakeholders to implement business logic for reconciliation reporting and audit-ready data.</p><div class="chips"><span>Business Logic</span><span>SQL</span><span>Reporting</span></div><button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-study-2">Explore case study <span aria-hidden="true">＋</span></button><div class="case-details" id="case-study-2" hidden><div><small>CONTEXT</small><p>Reporting workflows required clear business logic and consistent data presentation to support reconciliation and audit readiness.</p></div><div><small>MY CONTRIBUTION</small><p>Collaborated with functional stakeholders to implement and validate reporting logic, keeping the data output aligned with business rules. The details shown here are intentionally limited to the contribution already described in this portfolio.</p></div></div></div></article>
+    <article class="project-card project-three"><div class="project-visual"><div class="visual-pulse"></div><span>AUTOMATION</span><span>↗</span></div><div class="project-copy"><small>03 / US-BASED HEALTHCARE</small><h3>Production Operations &amp; Service Reliability Management</h3><p>Supported a US-based healthcare and life sciences workflow through production monitoring, ServiceNow incident and service-request handling, and operational coordination to improve issue visibility and resolution.</p><div class="chips"><span>ServiceNow</span><span>Monitoring</span><span>Operations</span></div><button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-study-3">Explore case study <span aria-hidden="true">＋</span></button><div class="case-details" id="case-study-3" hidden><div><small>CLIENT / PROJECT ASK</small><p>US-based healthcare &amp; life sciences project requiring dependable day-to-day technology operations, continuous production monitoring, and structured management of incidents and service requests. The engagement required effective coordination across teams to ensure issues were tracked, communicated, and resolved within expected timelines.</p></div><div><small>WHAT I DELIVERED</small><p>Supported production operations through continuous application and system monitoring, identifying and tracking issues that could impact day-to-day services. Managed incident and service-request workflows through ServiceNow, coordinated with relevant teams for investigation and resolution, and followed issues through to closure. Contributed to maintaining operational stability while ensuring timely communication and structured issue management across the engagement.</p></div></div></div></article>
   </div>
   <p class="confidential">Professional client work is presented at a high level to respect confidentiality.</p>
 </section>
@@ -153,10 +172,8 @@
 
 <section class="resume section" id="resume">
   <div class="section-top"><span>05</span><i></i><b>RESUME</b></div>
-  <div class="resume-layout"><h2>Two directions.<br><em>One foundation.</em></h2><p>Choose the version that best matches the opportunity you're exploring.</p></div>
-  <div class="resume-grid">
-    <a class="resume-card" href="assets/Shweta-Shinde-Data-Engineering-Resume.pdf" download><small>TECHNICAL</small><h3>Data &amp; AI Engineering</h3><p>Cloud data platforms, engineering, automation, SQL, Python and enterprise workflows.</p><span>DOWNLOAD ↗</span></a>
-    <a class="resume-card" href="assets/Shweta-Shinde-Product-Management-Resume.pdf" download><small>FUNCTIONAL + TECHNICAL</small><h3>Product, Business &amp; Delivery</h3><p>Requirements, Agile delivery, stakeholder collaboration, product thinking and project management.</p><span>DOWNLOAD ↗</span></a>
+  <div class="cv-download-wrap">
+    <a class="outline-btn cv-download" href="assets/Shweta_Shinde_PMT_Resume.pdf" download>Download CV <span>↗</span></a>
   </div>
 </section>
 
@@ -191,8 +208,17 @@
     </div>
   </div>
 
+  <div class="life-story reverse reveal">
+    <div class="life-story-copy"><span>03 / MOVEMENT + CULTURE</span><h3>Finding my rhythm.<br><em>Building my strength.</em></h3><p>Whether it’s the colour and celebration of Garba or the quiet discipline of showing up at the gym, movement keeps me grounded. Dance connects me to my roots; training reminds me what consistency can build.</p></div>
+    <div class="life-cluster dance-cluster movement-cluster">
+      <figure class="life-card dance-photo"><img src="assets/dance-garba.png" alt="Shweta celebrating Garba, surrounded by colour and culture"><figcaption>Garba · colour, culture &amp; joy</figcaption></figure>
+      <figure class="life-card gym-photo"><img src="assets/gym-shweta.png" alt="Shweta training at the gym"><figcaption>Strength · discipline &amp; growth</figcaption></figure>
+      <div class="dance-note" aria-hidden="true">LIFE IN<br>MOTION <span>✳</span></div>
+    </div>
+  </div>
+
   <div class="life-story reveal">
-    <div class="life-story-copy"><span>03 / COMMUNITY WORK</span><h3>Showing up.<br><em>Giving back.</em></h3><p>Impact Day is one of the reminders that meaningful work is not always about what we build — sometimes it is about who we build it with.</p></div>
+    <div class="life-story-copy"><span>04 / COMMUNITY WORK</span><h3>Showing up.<br><em>Giving back.</em></h3><p>Impact Day is one of the reminders that meaningful work is not always about what we build — sometimes it is about who we build it with.</p></div>
     <div class="life-cluster impact-cluster">
       <figure class="life-card impact-activity"><img src="assets/impact-day-activity.jpeg" alt="Community activity during Deloitte Impact Day"><figcaption>Impact Day · giving back</figcaption></figure>
       <figure class="life-card impact-team"><img src="assets/impact-day-team.jpeg" alt="Team moment during Deloitte Impact Day"><figcaption>Team moments</figcaption></figure>

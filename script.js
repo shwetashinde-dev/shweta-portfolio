@@ -35,3 +35,45 @@ counters.forEach(el=>counterObserver.observe(el));
 
 const timelineObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.timeline-item').forEach(x=>x.classList.remove('active'));e.target.classList.add('active')}}),{threshold:.45});
 document.querySelectorAll('.timeline-item').forEach(el=>timelineObserver.observe(el));
+
+
+// Theme toggle: respect the saved preference; otherwise follow the device setting.
+(() => {
+  const root = document.documentElement;
+  const toggle = document.querySelector('.theme-toggle');
+  if (!toggle) return;
+  const icon = toggle.querySelector('.theme-icon');
+  const label = toggle.querySelector('.theme-label');
+  const stored = (() => { try { return localStorage.getItem('shweta-theme'); } catch (_) { return null; } })();
+  const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initial = stored || (systemDark ? 'dark' : 'light');
+  const applyTheme = theme => {
+    root.dataset.theme = theme;
+    const lightNext = theme === 'dark';
+    toggle.setAttribute('aria-label', `Switch to ${lightNext ? 'light' : 'dark'} mode`);
+    toggle.setAttribute('title', `Switch to ${lightNext ? 'light' : 'dark'} mode`);
+    if (icon) icon.textContent = lightNext ? '☼' : '☾';
+    if (label) label.textContent = lightNext ? 'LIGHT' : 'DARK';
+  };
+  applyTheme(initial);
+  toggle.addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    try { localStorage.setItem('shweta-theme', next); } catch (_) {}
+  });
+})();
+
+// Expandable case studies: keep each control's accessible state in sync.
+document.querySelectorAll('.case-toggle').forEach(button => {
+  button.addEventListener('click', () => {
+    const panel = document.getElementById(button.getAttribute('aria-controls'));
+    if (!panel) return;
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!expanded));
+    panel.hidden = expanded;
+    const label = button.childNodes[0];
+    if (label && label.nodeType === Node.TEXT_NODE) label.textContent = expanded ? 'Explore case study ' : 'Close case study ';
+    const symbol = button.querySelector('span');
+    if (symbol) symbol.textContent = expanded ? '＋' : '−';
+  });
+});
